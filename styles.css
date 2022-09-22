@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Director Regular';
+  src: url(./fonts/Director-Regular.woff);
+  src: url(./fonts/Director-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Equateur Regular';
+  src: url(./fonts/Equateur-Regular.woff);
+  src: url(./fonts/Equateur-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Karrik';
+  src: url(./fonts/Karrik-Regular.woff);
+  src: url(./fonts/Karrik-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Format';
+  src: url(./fonts/Format_1452.woff);
+  src: url(./fonts/Karrik-Regular.woff2);
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lack';
+  /* letter-spacing: 0.3rem; */
+}
+
+a {
+  text-decoration: none;
+  color:#faebd7;
+  font-size: 30px;
+}
+
+button {
+  font-family: 'Equateur Regular';
+  color:#faebd7;
+  padding: 10px;
+  border: 1px solid #faebd7;
+  background: inherit;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* using the old design, these need to be activated */
+
+/* h1, h2, p {
+  margin-block-end: 0px !important;
+  margin-block-start: 0px !important;
+} */
+
+.content-container {
+  width: 100vw;
+  /* background-color: #16161b; */
+  /* background-color: #3F4E4F; */
+  color:#faebd7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+
+.home-text-wrapper {
+  display: block;
+}
+
+.name {
+  font-size: 65px
+}
+.working-role {
+  font-size: 35px;
+}
+
+.menu-work {
+  position: fixed;
+  top: 2.25rem;
+  right: 2.25rem;
+}
+
+.menu-contact {
+  position: fixed;
+  top: 2.25rem;
+  left: 2.25rem;
+}
+
+.linkedin {
+  position: fixed;
+  bottom: 2.25rem;
+  left: 2.25rem;
+}
+
+.github {
+  position: fixed;
+  bottom: 2.25rem;
+  right: 2.25rem;
+}
+
+.logo {
+  position: fixed;
+  top: 2.25rem;
+  right: 50%;
+}
+
+img {
+  filter: invert(92%) sepia(8%) saturate(979%) hue-rotate(327deg) brightness(106%) contrast(96%);
+  width: 50px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project-window {
+  width: 50%;
+  height: 70%;
+  top: 50;
+  bottom: 50;
+  position: fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+.projects-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+
+
+
+
+
