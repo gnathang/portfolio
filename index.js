@@ -1,39 +1,48 @@
 
 
-// let container = document.getElementById('container');
+const workColorWrapper = document.querySelector('#menu-work-container');
+  workColorWrapper.addEventListener('mousemove', changeColorWork);
+const aboutColorWrapper = document.querySelector('#menu-about-container');
+  aboutColorWrapper.addEventListener('mousemove', changeColorAbout);
+const linkedinWrapper = document.querySelector('#linkedin-container');
+  linkedinWrapper.addEventListener('mousemove', changeColorLinkedin);
+const githubWrapper = document.querySelector('#github-container');
+  githubWrapper.addEventListener('mousemove', changeColorGithub);
 
-// window.addEventListener(
-// "mousemove", function (e) {
-//   x = e.offsetX;
-//   y = e.offsetY;
-//   container.style.backgroundColor 
-//       = `rgb(${x}, ${y}, ${x - y})`;
-// });
+// const everythingElse = document.querySelector('.home-text-wrapper');
+// everythingElse.addEventListener('mousemove', resetColor);
 
 
-document.onmousemove = function (e) {
-  let container = document.getElementById('container');
-  let x = e.clientX;
-  let y = e.clientY;  
-  container.style.backgroundColor = `rgb(${x},${y},${(x + y) / 10})`;
+
+const workNav = document.querySelector('#work-nav')
+const aboutNav = document.querySelector('#about-nav')
+const linkedinNav = document.querySelector('#linkedin-nav')
+const githubNav = document.querySelector('#github-nav')
+
+function changeColorWork(e) {
+  x = e.offsetX;
+  y = e.offsetY;
+  workNav.style.color = `rgb(${x},${y},${(x + y) / 10})`;
 }
 
+function changeColorAbout(e) {
+  x = e.offsetX;
+  y = e.offsetY;
+  aboutNav.style.color = `rgb(${x},${y},${(x + y) / 10})`;
+}
 
+function changeColorLinkedin(e) {
+  x = e.offsetX;
+  y = e.offsetY;
+  linkedinNav.style.backgroundColor = `rgb(${x},${y},${(x + y) / 10})`;
+}
 
+function changeColorGithub(e) {
+  x = e.offsetX;
+  y = e.offsetY;
+  githubNav.style.backgroundColor = `rgb(${x},${y},${(x + y) / 10})`;
+}
 
-// const changeColour = () => {
-//   console.log('testing');
-//   document.getElementById("container").style.backgroundColor = "lightblue";
-// };
-
-
-// window.addEventListener(
-// "mousemove", function (e) {
-
-// $(document).mousemove(function(e){
-//   var $width = ($(document).width())/255;
-//   var $height = ($(document).height())/255;
-//   var $pageX = parseInt(e.pageX / $width,10);
-//   var $pageY = parseInt(e.pageY / $height,10);
-//   $("container").css("background-color", "rgb("+$pageX+","+$pageY+","+$pageX+")");
-//   }); 
+// function resetColor() {
+//   workNav.style.color = `rgb(250, 235, 215);`;
+// }
