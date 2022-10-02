@@ -67,7 +67,7 @@ h1 {
   margin-block-start: 29.05px !important;
 }
 
-.content-container {
+.content-container, .work-container {
   width: 100vw;
   color:#faebd7;
   height: 100vh;
@@ -240,11 +240,22 @@ a img {
   /* border-radius: 100%; */
 }
 
-.about-text-wrapper {
-  display: block;
+.about-window {
+  /* background-color: #313d3e; */
+  height: 65vh;
   width: 60%;
-  padding: 10px;
-  /* z-index: 99; */
+  padding: 30px;
+  /* position: fixed; */
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow-x: hidden;
+}
+
+.about-text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-right: 30px;
 }
 
 .now {
@@ -263,8 +274,8 @@ a img {
   /* background-color: #313d3e; */
   width: 60%;
   padding: 5px;
-  height: 70%;
-  top: 40;
+  height: 75vh;
+  top: 20;
   bottom: 40;
   position: fixed;
   overflow-y: scroll;
@@ -342,7 +353,7 @@ a img {
 
 @media(max-width:900px) {
 
-  body {
+  .work-container, .content-container {
      /* double scroll bar on work.html fix */
     height: 100vh;
     overflow-x:hidden;
@@ -386,22 +397,20 @@ a img {
     font-size: 28px;
   }
 
-  .about-text-wrapper {
-    display: block;
-    width: 100%;
-    padding-top: 234px; /* questionable */
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .projects-wrapper {
-    margin-bottom: 100px;
+  .about-window {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
   }
 
   .project-window {
     padding-left: 10px;
     padding-right: 10px;
     width: 90%;
+  }
+
+  .projects-wrapper {
+    margin-bottom: 100px;
   }
 
   .project-name {
