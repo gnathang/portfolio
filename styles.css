@@ -93,7 +93,7 @@ h1 {
   width: 100%;
   padding: 30px;
   height: 70%;
-  top: 40;
+  top: 50;
   bottom: 40;
 }
 
@@ -273,7 +273,7 @@ a img {
   bottom: 40;
   position: fixed;
   overflow-y: scroll;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .projects-wrapper {
