@@ -25,7 +25,7 @@
 body {
   margin: 0px;
   font-family: 'Lack';
-  /* letter-spacing: 0.3rem; */
+  background-color: #456163;
 }
 
 a {
@@ -45,7 +45,7 @@ button {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 
@@ -56,8 +56,6 @@ h1 {
 
 .content-container {
   width: 100vw;
-  /* background-color: #16161b; */
-  /* background-color: #3F4E4F; */
   color:#faebd7;
   height: 100vh;
   display: flex;
@@ -79,7 +77,6 @@ h1 {
   height: 70%;
   top: 40;
   bottom: 40;
-  background-color: #3F4E4F;
 }
 
 .name {
@@ -94,6 +91,18 @@ h3 {
   font-size: 26px;
 }
 
+.stack-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.stack-wrapper img {
+  max-height: 35px;
+}
+
 .contact-wrapper {
   display: flex;
   align-items: center;
@@ -101,10 +110,20 @@ h3 {
 .contact-wrapper img {
   height: 1.2rem; 
   margin-right: 10px;
+  transition: color ease 0.5s
 }
 .contact-me {
   font-size: 22px;
-  color: #9f5252;
+  /* color: #9f5252; */
+  color:#f6bebe;
+}
+
+.contact-wrapper {
+  transition: transform ease 0.5s;
+}
+.contact-wrapper:hover {
+  /* color: #faebd7; */
+  transform: translateX(+3%);
 }
 
 #menu-work-container {
@@ -175,12 +194,27 @@ h3 {
   border-radius: 30px;
 }
 
-.logo {
+.about-logo {
+  width: 40rem;
   position: fixed;
-  top: -60%;
-  left: 45%;
-  z-index: 0;
- 
+  top: -14rem;
+  left: -17rem;
+  z-index: -1;
+}
+
+.work-logo {
+  width: 40rem;
+  position: fixed;
+  top: -215px;
+  right: -150px;
+  z-index: -1;
+}
+
+.home-logo {
+  height: inherit;
+  position: fixed;
+  top: -35%;
+  left: 20%;
 }
 
 a img {
@@ -189,10 +223,28 @@ a img {
 
 
 .about-image {
-  width: 250px;
-  border-radius: 100%;
+  width: 100px;
+  /* border-radius: 100%; */
 }
 
+.about-text-wrapper {
+  display: block;
+  width: 60%;
+  padding: 10px;
+  /* z-index: 99; */
+}
+
+.now {
+  /* color: #ceba78; */
+  color: #faebd7;
+}
+
+.stack {
+  /* color:#c48585; */
+  font-size: 20px;
+  color: #e4da53;
+  padding-top: 12px; 
+}
 
 .project-window {
   /* background-color: #313d3e; */
@@ -205,10 +257,51 @@ a img {
   overflow-y:scroll;
   overflow-x:hidden;  
 }
+
 .projects-wrapper {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+  margin-right: 30px;
+}
+
+.project-summary, .project-date {
+  font-size: 18px;
+}
+
+.project-links-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.project-link {
+  font-size: 18px;
+  z-index: 4 !important;
+  padding: 10px;
+  border: solid 1px #faebd7;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #9F5252;
+}
+
+.github-project-link:hover {
+  filter: invert(38%) sepia(17%) saturate(1447%) hue-rotate(314deg) brightness(96%) contrast(87%);
+}
+
+.github-project-link {
+  transition: color 0.3s ease;
+}
+
+.pink {
+  color:#f6bebe;
+}
+
+.project-links-wrapper img {
+  max-width: 35px;
+  margin-left: 20px;
 }
 
 /* width */
@@ -237,23 +330,23 @@ a img {
 @media(max-width:900px) {
 
   .menu-work {
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 0.6rem;
+    right: 0.8rem;
   }
 
   .menu-about {
-    top: 1.25rem;
-    left: 1.25rem;
+    top: 0.6rem;
+    left: 0.8rem;
   }
 
   .linkedin {
-    bottom: 1.25rem;
-    left: 1rem;
+    bottom: 0.3rem;
+    left: 0.3rem;
   }
 
   .github {
-    bottom: 1.25rem;
-    right: 1rem;
+    bottom: 0.3rem;
+    right: 0.3rem;
   }
 
   .about-image {
@@ -262,10 +355,64 @@ a img {
 }
 
 @media(max-width:668px) {
+
   .home-text-wrapper {
     height: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .working-role {
+    font-size: 28px;
+  }
+
+  .about-text-wrapper {
+    display: block;
+    width: 100%;
+    padding-top: 234px; /* questionable */
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .projects-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .project-window {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+  }
+
+  .project-name {
+    font-size: 24px;
+    /* margin-bottom: 25px; */
+  }
+
+  .project-summary, .project-date {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .about-me-title {
+    font-size: 20px;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+
+  .about-image {
+    width: 120px;
+  }
+
+  .stack {
+    font-size: 16px;
+    padding-bottom: 50px;
   }
 }
 
