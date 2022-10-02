@@ -22,6 +22,12 @@
   src: url(./fonts/Karrik-Regular.woff2);
 }
 
+@font-face {
+  font-family: 'Lack';
+  src: url(./fonts/Lack-Regular.woff);
+  src: url(./fonts/Lack-Regular.woff2);
+}
+
 body {
   margin: 0px;
   font-family: 'Lack';
