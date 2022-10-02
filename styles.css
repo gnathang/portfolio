@@ -39,6 +39,11 @@ body {
   font-weight: normal;
   font-style: normal;
   background-color: #456163;
+  
+  /* double scroll bar on work.html fix */
+  width:100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 a {
@@ -409,7 +414,6 @@ a img {
 
   ::-webkit-scrollbar {
     width: 7px;
-    display: none;
   }
 
   .about-me-title {
