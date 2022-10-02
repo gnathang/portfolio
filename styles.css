@@ -39,11 +39,6 @@ body {
   font-weight: normal;
   font-style: normal;
   background-color: #456163;
-
-  /* double scroll bar on work.html fix */
-  height:100%;
-  /* overflow-x:hidden; */
-  /* overflow-y:hidden; */
 }
 
 a {
@@ -267,7 +262,7 @@ a img {
 .project-window {
   /* background-color: #313d3e; */
   width: 60%;
-  padding: 5  0px;
+  padding: 5px;
   height: 70%;
   top: 40;
   bottom: 40;
@@ -346,6 +341,13 @@ a img {
 /* RESPONSIVE STYLES */
 
 @media(max-width:900px) {
+
+  body {
+     /* double scroll bar on work.html fix */
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
 
   .menu-work {
     top: 0.6rem;
