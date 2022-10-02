@@ -409,6 +409,7 @@ a img {
 
   ::-webkit-scrollbar {
     width: 7px;
+    display: none;
   }
 
   .about-me-title {
