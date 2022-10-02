@@ -42,8 +42,8 @@ body {
 
   /* double scroll bar on work.html fix */
   height:100%;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  /* overflow-x:hidden; */
+  /* overflow-y:hidden; */
 }
 
 a {
