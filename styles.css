@@ -39,6 +39,8 @@ body {
   font-weight: normal;
   font-style: normal;
   background-color: #456163;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
