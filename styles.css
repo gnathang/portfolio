@@ -67,7 +67,7 @@ h1 {
   margin-block-start: 29.05px !important;
 }
 
-.content-container, .work-container {
+.content-container, .work-container, .about-container {
   width: 100vw;
   color:#faebd7;
   height: 100vh;
@@ -249,6 +249,7 @@ a img {
   margin-top: auto;
   margin-bottom: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .about-text-wrapper {
@@ -353,11 +354,11 @@ a img {
 
 @media(max-width:900px) {
 
-  .work-container, .content-container {
+  .work-container, .about-container {
      /* double scroll bar on work.html fix */
     height: 100vh;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .menu-work {
@@ -382,6 +383,13 @@ a img {
 
   .about-image {
     width: 200px;
+  }
+
+  #menu-about-container, #menu-work-container,
+  #linkedin-container, #github-container {
+    width: 10px;
+    height: 5px;
+    padding: 10px;
   }
 }
 
