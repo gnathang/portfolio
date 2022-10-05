@@ -90,8 +90,7 @@ h1 {
   width: 100%;
   padding: 30px;
   height: 70%;
-  top: 50;
-  bottom: 40;
+  padding-top: inherit;
 }
 
 .name {
@@ -416,6 +415,7 @@ a img {
   .project-window {
     padding-left: 10px;
     padding-right: 10px;
+    height: 65vh;
     width: 90%;
   }
 
