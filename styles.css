@@ -242,11 +242,13 @@ a img {
 }
 
 .about-window {
-  height: 65vh;
+  height: 75vh;
   width: 60%;
   padding: 30px;
   overflow-x: hidden;
   overflow-y: scroll;
+  position: fixed;
+  top: 90px;
 }
 
 .about-text-wrapper {
@@ -348,7 +350,7 @@ a img {
 /* RESPONSIVE STYLES */
 
 @media(min-width:1150px) {
-  
+
   .about-window::-webkit-scrollbar {
     display: none;
   }
@@ -411,9 +413,8 @@ a img {
     padding-left: 10px;
     padding-right: 10px;
     width: 90%;
-    height: 68vh;
+    height: 60vh;
     width: 90%;
-    top: 90px;
   }
 
   .project-window {
