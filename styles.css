@@ -415,8 +415,9 @@ a img {
   .project-window {
     padding-left: 10px;
     padding-right: 10px;
-    height: 65vh;
+    height: 63vh;
     width: 90%;
+    top: 80px;
   }
 
   .projects-wrapper {
